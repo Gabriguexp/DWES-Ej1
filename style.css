@@ -1,0 +1,76 @@
+html{
+    /*background-color:rgb(36, 48, 234);*/
+    
+    background-image: url(images/wxp.jpg);
+    background-repeat: no-repeat;
+    /*background-position: top center;*/
+
+}
+
+#headerPag1{
+    background-color:yellow;
+}
+
+#headerPag2{
+    background-color:yellow;
+}
+
+#headerPag3{
+    background-color:yellow;
+}
+
+#headerPag4{
+    background-color:yellow;
+}
+
+
+#container{
+    background-color:white;
+    margin:auto;
+    width:500px;
+    padding-bottom:30px;
+    /*height:500px;*/
+    /*border:solid, 1px, black; */
+}
+
+footer span{
+    font-size:0.75em;
+    float:right;
+    color:blue;
+    margin-right:5px;
+}
+
+label{
+    width:100px;
+    margin-left:20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input{
+    width:450px;
+    margin-left:20px;
+}
+
+.button{
+    width:70px !important; 
+}
+
+.success{
+    color:green;
+}
+
+.warning{
+    color:red;
+}
+
+.checkbox{
+    
+    width:20px! important;
+
+    position: relative;
+    margin-left: 20px;
+
+    vertical-align: middle;
+    
+}
