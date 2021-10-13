@@ -23,6 +23,10 @@ html{
     background-color:yellow;
 }
 
+header h1{
+    margin-left:10px
+}
+
 
 #container{
     background-color:white;
@@ -65,12 +69,12 @@ input{
 }
 
 .checkbox{
-    
     width:20px! important;
-
     position: relative;
     margin-left: 20px;
-
     vertical-align: middle;
-    
+}
+
+#main-content{
+    margin-left: 20px;
 }

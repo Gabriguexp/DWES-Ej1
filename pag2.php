@@ -4,9 +4,6 @@
 
 if(isset($_POST['submit'])){
     unset($_POST['submit']);
-    /*$usuario = $_POST['usuario'];
-    $pass = $_POST['pass'];
-    $repass = $_POST['repass']; */
 } else {
     header('Location: index.php');
     
@@ -16,7 +13,7 @@ if(isset($_POST['submit'])){
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>Registro 2/4</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
 
     </head>

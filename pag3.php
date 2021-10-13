@@ -19,7 +19,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>Registro 3/4</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
