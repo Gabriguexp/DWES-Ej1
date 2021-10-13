@@ -1,12 +1,14 @@
 <!doctype html>
 <?php 
     if(isset($_POST['submit'])){
-        $usuario = $_POST['usuario'];
+
+        unset($_POST['submit']);
+        /*$usuario = $_POST['usuario'];
         $pass = $_POST['pass'];
         $repass = $_POST['repass'];
         $nombre = $_POST['nombre'];
         $apellidos = $_POST['apellidos'];
-        $correo = $_POST['correo'];
+        $correo = $_POST['correo']; */
     } else {
         header('Location: pag2.php');
     }
@@ -33,13 +35,13 @@
                     <input class=\"checkbox\" type=\"checkbox\" name=\"$valor\"/><br/><br/>";
                 }
                 ?>
-                <input type="hidden" name="usuario" value="<?php echo $usuario?>"/>
-                <input type="hidden" name="pass" value="<?php echo $pass?>"/>
-                <input type="hidden" name="repass" value="<?php echo $repass?>"/>
-                <input type="hidden" name="nombre" value="<?php echo $nombre?>"/>
-                <input type="hidden" name="apellidos" value="<?php echo $apellidos?>"/>
-                <input type="hidden" name="correo" value="<?php echo $correo?>"/>
+
                 <br> 
+                <?php 
+                    foreach($_POST as $index => $value){
+                        echo "<input type=\"hidden\" name=\"$index\" value=\"$value\">";
+                    }
+                ?>
                 <input class="button" type="submit" name="submit"/>
             </form>
             <br>

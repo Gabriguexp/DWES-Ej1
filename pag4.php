@@ -44,7 +44,7 @@
                 $linea = substr_replace($linea ,".",-2);
                 echo $linea;
             } else{
-                echo "No te interesa nada de lo que ofrecemos";
+                echo "No te interesa nada de la lista anterior.";
             }
 
             ?>

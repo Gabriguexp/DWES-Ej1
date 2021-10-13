@@ -3,9 +3,10 @@
 <?php 
 
 if(isset($_POST['submit'])){
-    $usuario = $_POST['usuario'];
+    unset($_POST['submit']);
+    /*$usuario = $_POST['usuario'];
     $pass = $_POST['pass'];
-    $repass = $_POST['repass'];
+    $repass = $_POST['repass']; */
 } else {
     header('Location: index.php');
     
@@ -31,9 +32,13 @@ if(isset($_POST['submit'])){
                 <input required  type="text" name="apellidos"/> <br> <br> 
                 <label for="correo">Email</label> <br> 
                 <input required  type="text" name="correo"/> <br> <br> 
-                <input type="hidden" name="usuario" value="<?php echo $usuario?>"/>
-                <input type="hidden" name="pass" value="<?php echo sha1($pass)?>"/>
-                <input type="hidden" name="repass" value="<?php echo sha1($repass)?>"/>
+                <?php 
+                    foreach($_POST as $index => $value){
+                        echo "<input type=\"hidden\" name=\"$index\" value=\"$value\">";
+                    }
+                ?>
+
+                
                 <input class="button" type="submit" name="submit"/>
             </form>
             <br>
